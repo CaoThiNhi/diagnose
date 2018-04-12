@@ -8,7 +8,7 @@ import net.simplifiedlearning.simplifiedcoding.Activities.LoginActivity;
 import net.simplifiedlearning.simplifiedcoding.Models.User;
 
 /**
- * Created by Belal on 9/5/2017.
+ * Created by nhict on 3/22/18.
  */
 
 //here for this class we are using a singleton pattern
