@@ -38,17 +38,17 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `report_id`, `url`, `result`) VALUES
-(12, 15, 'http://apho2017@student.hust.edu.vn/uploads/1.jpg', -1),
-(13, 16, 'http://apho2017@student.hust.edu.vn/uploads/13.png', -1),
-(14, 17, 'http://apho2017@student.hust.edu.vn/uploads/14.png', -1),
-(15, 17, 'http://apho2017@student.hust.edu.vn/uploads/15.png', -1),
-(16, 19, 'http://apho2017@student.hust.edu.vn/uploads/16.png', -1),
-(17, 19, 'http://apho2017@student.hust.edu.vn/uploads/17.png', -1),
-(18, 20, 'http://apho2017@student.hust.edu.vn/uploads/18.jpg', -1),
-(19, 20, 'http://apho2017@student.hust.edu.vn/uploads/19.jpg', -1),
-(20, 21, 'http://apho2017@student.hust.edu.vn/uploads/20.jpg', 1),
-(21, 21, 'http://apho2017@student.hust.edu.vn/uploads/21.jpg', 0),
-(22, 21, 'http://apho2017@student.hust.edu.vn/uploads/22.jpg', 1);
+(12, 15, 'http://10.0.2.2/diagnose-report/uploads/1.jpg', -1),
+(13, 16, 'http://10.0.2.2/diagnose-report/uploads/13.png', -1),
+(14, 17, 'http://10.0.2.2/diagnose-report/uploads/14.png', -1),
+(15, 17, 'http://10.0.2.2/diagnose-report/uploads/15.png', -1),
+(16, 19, 'http://10.0.2.2/diagnose-report/uploads/16.png', -1),
+(17, 19, 'http://10.0.2.2/diagnose-report/uploads/17.png', -1),
+(18, 20, 'http://10.0.2.2/diagnose-report/uploads/18.jpg', -1),
+(19, 20, 'http://10.0.2.2/diagnose-report/uploads/19.jpg', -1),
+(20, 21, 'http://10.0.2.2/diagnose-report/uploads/20.jpg', 1),
+(21, 21, 'http://10.0.2.2/diagnose-report/uploads/21.jpg', 0),
+(22, 21, 'http://10.0.2.2/diagnose-report/uploads/22.jpg', 1);
 
 -- --------------------------------------------------------
 

@@ -1,7 +1,9 @@
 <?php
   require_once 'dbconnect.php';
   $upload_path = 'uploads/';
-  $upload_url = 'http://10.0.2.2/diagnose-report/'.$upload_path;
+  $server_ip = gethostbyname(gethostname());
+  $upload_url = 'http://apho2017.hust.edu.vn/uploads/';
+
   $response = array();
 
   if($_SERVER['REQUEST_METHOD']=='GET'){
