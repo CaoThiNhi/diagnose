@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
                         //creating a new user object
                         User user = new User(
                                 userJson.getInt("id"),
-                                userJson.getString("username"),
+                                userJson.getString("name"),
                                 userJson.getString("email"),
                                 userJson.getString("gender")
                         );
@@ -115,7 +115,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         //starting the profile activity
                         finish();
-                        startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                        startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
                     } else {
                         Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
                     }
@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 //creating request parameters
                 HashMap<String, String> params = new HashMap<>();
-                params.put("username", username);
+                params.put("name", username);
                 params.put("password", password);
 
                 //returing the response

@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:hint="Username"
+            android:hint="Tài khoản"
             android:inputType="text" />
 
         <EditText
@@ -31,7 +31,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif"
-            android:hint="Password"
+            android:hint="Mật khẩu"
             android:inputType="textPassword" />
 
         <Button
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Login" />
+            android:text="Đăng nhập" />
 
         <TextView
             android:id="@+id/textViewRegister"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Dont' have an account?\nRegister Here"
+            android:text="Bạn chưa có tài khoản?\nĐăng kí"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 

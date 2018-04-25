@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 import net.simplifiedlearning.simplifiedcoding.Models.Image;
+import net.simplifiedlearning.simplifiedcoding.Models.Report;
 import net.simplifiedlearning.simplifiedcoding.R;
 
 import java.util.List;
@@ -29,29 +30,48 @@ public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView image_name, image_result;
-        private ImageView image_url;
+        private ImageView report_image_item, report_image_result;
         public ViewHolder(View itemView) {
             super(itemView);
-            image_url = itemView.findViewById(R.id.image_url);
-            image_name = itemView.findViewById(R.id.image_name);
-            image_result = itemView.findViewById(R.id.image_result);
+            report_image_item = itemView.findViewById(R.id.report_image_item);
+            report_image_result = itemView.findViewById(R.id.report_image_result);
         }
-    }
-
-    @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        Image image = images.get(position);
-        Picasso.get().load(image.getUrl()).into(holder.image_url);
-        holder.image_name.setText(image.getName());
-        holder.image_result.setText(String.format("Your Probable Risks: %s%%", String.valueOf(image.getResult())));
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_image, parent, false);
+                .inflate(R.layout.show_report_images, parent, false);
         return new ViewHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Image image = images.get(position);
+        Picasso.get().load(image.getUrl()).into(holder.report_image_item);
+        int result = image.getResult();
+        if (result == -1) {
+            // khong co du lieu
+            holder.report_image_result.setImageResource(R.drawable.ic_help_black_24dp);
+            holder.report_image_result.setColorFilter(context.getResources().getColor(R.color.warning)); // yellow
+        }
+        else {
+            if (result == 1) {
+                // khong co benh
+                holder.report_image_result.setImageResource(R.drawable.ic_assignment_turned_in_black_24dp);
+                holder.report_image_result.setColorFilter(context.getResources().getColor(R.color.safe)); // green
+            } else {
+                holder.report_image_result.setImageResource(R.drawable.ic_warning_black_24dp);
+                holder.report_image_result.setColorFilter(context.getResources().getColor(R.color.danger)); // red
+            }
+
+//            TextView generalResult = findViewById(R.id.show_report_general_result);
+//            if (Float.compare(general_result, 70) == 1)
+//                generalResult.setTextColor(ContextCompat.getColor(this, R.color.safe));
+//            else
+//                generalResult.setTextColor(ContextCompat.getColor(this, R.color.danger));
+//            generalResult.setText(String.valueOf(general_result + "%"));
+        }
     }
 
     @Override
