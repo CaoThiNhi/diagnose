@@ -77,10 +77,10 @@ public class FragmentReports extends Fragment {
         recyclerView.setAdapter(reportsAdapter);
 
         String arr[]={
-                "Type of report",
-                "Report type 1",
-                "Report type 2",
-                "Report type 3"};
+                "Loại khám ",
+                "Khám tim",
+                "Đo chỉ số cơ thể ",
+                "..."};
         Spinner spin = getView().findViewById(R.id.spinner1);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 getActivity(), android.R.layout.simple_spinner_item, arr
@@ -119,8 +119,6 @@ public class FragmentReports extends Fragment {
                     Log.e(TAG, reports.toString());
                     reportsAdapter.notifyDataSetChanged();
                     TextView reportNumber = getView().findViewById(R.id.report_number);
-                    reportNumber.setText(new StringBuilder().append("Total ").append(reports.size()).append(" reports").toString());
-                } else {
                     Log.e(TAG, response.message());
                 }
                 swipeContainer.setEnabled(false);

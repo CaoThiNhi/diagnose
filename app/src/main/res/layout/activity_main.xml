@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:hint="Username"
+            android:hint="Tài khoản"
             android:inputType="text" />
 
         <EditText
@@ -39,7 +39,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif"
-            android:hint="Password"
+            android:hint="Mật khẩu"
             android:inputType="textPassword" />
 
         <RadioGroup
@@ -55,14 +55,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="Male" />
+                android:text="Nam" />
 
 
             <RadioButton
                 android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female" />
+                android:text="Nữ" />
 
         </RadioGroup>
 
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Register" />
+            android:text="Đăng kí" />
 
         <TextView
             android:id="@+id/textViewLogin"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Already Registered?\nLogin Here"
+            android:text="Bạn đã có tài kh?oản\nĐăng nhập"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
     </LinearLayout>

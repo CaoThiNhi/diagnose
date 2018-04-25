@@ -99,7 +99,7 @@
                     android:gravity="center"
                     android:textColor="#1e1e1e"
                     android:background="@drawable/border_box_2"
-                    android:text="Report details"/>
+                    android:text="Chi tiết bản khám bệnh"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -109,6 +109,12 @@
                     android:paddingEnd="16dp"
                     android:layout_marginTop="-2dp"
                     android:background="@drawable/border_box">
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
 
                     <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"

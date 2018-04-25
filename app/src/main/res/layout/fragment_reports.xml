@@ -46,15 +46,15 @@
 
                         <TextView
                             android:id="@+id/report_number"
-                            android:layout_marginStart="2dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Reports"
-                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2dp"
+                            android:drawablePadding="2dp"
+                            android:text="Phiếu khám bệnh đã kiểm tra"
                             android:textColor="#202020"
                             android:textSize="14sp"
-                            android:layout_gravity="center"
-                            android:drawablePadding="2dp"/>
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 

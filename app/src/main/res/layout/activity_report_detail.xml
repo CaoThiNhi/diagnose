@@ -23,99 +23,99 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/border_set"
-                android:padding="16dp"
-                android:layout_marginBottom="10dp">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Phiếu khám bệnh"
                     android:textAllCaps="true"
-                    android:text="Report information"
                     android:textColor="@color/mat900"
                     android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Phiếu khám bệnh"
                     android:textColor="@color/mat800"
-                    android:textStyle="bold"
-                    android:text="Report name" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/show_report_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:text="Liver profile"
                     android:textColor="#3C3C3C"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="10dp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Mô tả"
                     android:textColor="@color/mat800"
-                    android:textStyle="bold"
-                    android:text="Report description" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/show_report_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                     android:textColor="#3C3C3C"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="10dp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Phát hiện bệnh (%)"
                     android:textColor="@color/mat800"
-                    android:textStyle="bold"
-                    android:text="Probability risk" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/show_report_general_result"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:text="90%"
                     android:textColor="#3C3C3C"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="10dp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Ảnh"
                     android:textColor="@color/mat800"
-                    android:textStyle="bold"
-                    android:text="Attached images" />
+                    android:textStyle="bold" />
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/show_report_images"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:padding="2dp"
-                    tools:listitem="@layout/preview_image_item_layout"
-                    android:layout_marginBottom="10dp" />
+                    tools:listitem="@layout/preview_image_item_layout" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Ngày tạo"
                     android:textColor="@color/mat800"
-                    android:textStyle="bold"
-                    android:text="Report created at" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/show_report_created_at"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:text="05 Oct 18"
                     android:textColor="#3C3C3C"
-                    android:textSize="14sp"
-                    android:layout_marginBottom="10dp"/>
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -129,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAllCaps="true"
-                    android:text="Patient information"
+                    android:text="Thông tin người bệnh"
                     android:textColor="@color/mat900"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/mat800"
                     android:textStyle="bold"
-                    android:text="Name" />
+                    android:text="Tên bệnh nhân" />
 
                 <TextView
                     android:id="@+id/show_patient_name"
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/mat800"
                     android:textStyle="bold"
-                    android:text="Age" />
+                    android:text="Tuổi" />
 
                 <TextView
                     android:id="@+id/show_patient_age"
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/mat800"
                     android:textStyle="bold"
-                    android:text="Height (cm)" />
+                    android:text="Chiều cao (cm)" />
 
                 <TextView
                     android:id="@+id/show_patient_height"
@@ -188,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/mat800"
                     android:textStyle="bold"
-                    android:text="Weight (kg)" />
+                    android:text="Cân nặng (kg)" />
 
                 <TextView
                     android:id="@+id/show_patient_weight"

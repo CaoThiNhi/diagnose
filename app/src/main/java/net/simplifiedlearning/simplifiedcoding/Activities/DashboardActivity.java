@@ -41,7 +41,7 @@ public class DashboardActivity extends AppCompatActivity {
         ViewPager viewPager  = findViewById(R.id.materialup_viewpager);
 
         FragmentManager manager = getSupportFragmentManager();
-        PagerAdapter adapter = new PagerAdapter(manager);
+        ReportEdit.PagerAdapter adapter = new ReportEdit.PagerAdapter(manager);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
